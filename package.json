@@ -1,15 +1,15 @@
 {
   "name": "@hashiprobr/expo-use-scanner",
-  "version": "1.0.0",
-  "description": "A React Hook for simplifying basic usage of expo-barcode-scanner",
+  "version": "1.0.1",
+  "description": "A React Hook for simplifying the barcode scanning features of expo-camera",
   "keywords": [
     "JavaScript",
     "React",
     "React Hook",
     "React Native",
     "Expo",
-    "BarCodeScanner",
-    "expo-barcode-scanner"
+    "Camera",
+    "expo-camera"
   ],
   "homepage": "https://github.com/hashiprobr/expo-use-scanner#readme",
   "bugs": {
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "expo": "^43.0.5",
-    "expo-barcode-scanner": "~11.1.2",
+    "expo-camera": "~12.0.3",
     "react": "^17.0.1",
     "react-native": ">=0.64.3"
   }

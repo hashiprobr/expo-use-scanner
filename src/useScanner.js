@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 
-import { BarCodeScanner } from 'expo-barcode-scanner';
+import { Camera } from 'expo-camera';
 
 export default function useScanner() {
     const ref = useRef(true);
@@ -10,7 +10,7 @@ export default function useScanner() {
     async function activate() {
         if (!active) {
             if (ref.current) {
-                const response = await BarCodeScanner.requestPermissionsAsync();
+                const response = await Camera.requestCameraPermissionsAsync();
                 if (response.granted) {
                     ref.current = false;
                 } else {
@@ -27,12 +27,22 @@ export default function useScanner() {
         }
     }
 
+    function Preview(props) {
+        return (
+            <Camera
+                {...props}
+            >
+                {props.children}
+            </Camera>
+        );
+    }
+
     return [
         {
             active,
             activate,
             deactivate,
         },
-        BarCodeScanner,
+        Preview,
     ];
 }
