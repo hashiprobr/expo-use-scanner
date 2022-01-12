@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import Camera from '@hashiprobr/expo-camera';
 
@@ -27,22 +27,12 @@ export default function useScanner() {
         }
     }
 
-    function Preview(props) {
-        return (
-            <Camera
-                {...props}
-            >
-                {props.children}
-            </Camera>
-        );
-    }
-
     return [
         {
             active,
             activate,
             deactivate,
         },
-        Preview,
+        Camera,
     ];
 }
