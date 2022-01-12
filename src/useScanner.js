@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
-import { Camera } from 'expo-camera';
+import Camera from '@hashiprobr/expo-camera';
 
 export default function useScanner() {
     const ref = useRef(true);
