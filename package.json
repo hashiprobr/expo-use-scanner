@@ -1,6 +1,6 @@
 {
   "name": "@hashiprobr/expo-use-scanner",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A React Hook for simplifying the barcode scanning features of expo-camera",
   "keywords": [
     "JavaScript",
@@ -26,7 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "@hashiprobr/expo-camera": "^1.0.7",
+    "@hashiprobr/expo-camera": "^1.0.8",
     "expo": "^43.0.5",
     "react": "^17.0.1",
     "react-native": ">=0.64.3"
