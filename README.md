@@ -2,7 +2,7 @@ expo-use-scanner
 ================
 
 **A React Hook for simplifying the barcode scanning features of
-[expo-camera](https://docs.expo.dev/versions/v44.0.0/sdk/camera/)**
+[expo-camera](https://docs.expo.dev/versions/latest/sdk/camera/)**
 
 This hook returns an object and an component.
 
@@ -19,7 +19,7 @@ The object has two properties:
 
 The component is a [modified
 version](https://www.npmjs.com/package/@hashiprobr/expo-camera) of
-[expo-camera](https://docs.expo.dev/versions/v44.0.0/sdk/camera/).
+[expo-camera](https://docs.expo.dev/versions/latest/sdk/camera/).
 
 
 Peer dependencies
