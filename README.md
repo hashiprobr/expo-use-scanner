@@ -80,7 +80,7 @@ export default function MyComponent() {
         }
     }
 
-    function onPressCancel(result) {
+    function onPressCancel() {
         scanner.deactivate();
     }
 
