@@ -70,7 +70,7 @@ import useScanner from '@hashiprobr/expo-use-scanner';
 export default function MyComponent() {
     const [data, setData] = useState(null);
 
-    const [scanner, Scanner] = useScanner();
+    const [scanner, Camera] = useScanner();
 
     async function onPressScan() {
         try {
@@ -98,7 +98,7 @@ export default function MyComponent() {
             }}
         >
             {scanner.active ? (
-                <Scanner
+                <Camera
                     style={{
                         flexGrow: 1,
                         alignSelf: 'stretch',
@@ -107,7 +107,7 @@ export default function MyComponent() {
                     onBarCodeScanned={onBarCodeScanned}
                 >
                     <Button title="cancel" onPress={onPressCancel} />
-                </Scanner>
+                </Camera>
             ) : (
                 <>
                     {data && (
