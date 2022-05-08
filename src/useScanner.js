@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 
-import Camera from '@hashiprobr/expo-camera';
+import Preview from '@hashiprobr/expo-camera';
 
 export default function useScanner() {
     const ref = useRef(true);
@@ -10,7 +10,7 @@ export default function useScanner() {
     async function activate() {
         if (!active) {
             if (ref.current) {
-                const response = await Camera.requestCameraPermissionsAsync();
+                const response = await Preview.requestCameraPermissionsAsync();
                 if (response.granted) {
                     ref.current = false;
                 } else {
@@ -33,6 +33,6 @@ export default function useScanner() {
             activate,
             deactivate,
         },
-        Camera,
+        Preview,
     ];
 }
