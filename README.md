@@ -27,10 +27,10 @@ Peer dependencies
 
 ``` json
 {
-    "@hashiprobr/expo-camera": "^1.0.8",
-    "expo": "^43.0.5",
-    "react": "^17.0.1",
-    "react-native": ">=0.64.3"
+    "@hashiprobr/expo-camera": "1.0.9",
+    "expo": "45.0.0",
+    "react": "17.0.2",
+    "react-native": "0.68.2"
 }
 ```
 
@@ -70,7 +70,7 @@ import useScanner from '@hashiprobr/expo-use-scanner';
 export default function MyComponent() {
     const [data, setData] = useState(null);
 
-    const [scanner, Camera] = useScanner();
+    const [scanner, Preview] = useScanner();
 
     async function onPressScan() {
         try {
@@ -98,7 +98,7 @@ export default function MyComponent() {
             }}
         >
             {scanner.active ? (
-                <Camera
+                <Preview
                     style={{
                         flexGrow: 1,
                         alignSelf: 'stretch',
@@ -107,7 +107,7 @@ export default function MyComponent() {
                     onBarCodeScanned={onBarCodeScanned}
                 >
                     <Button title="cancel" onPress={onPressCancel} />
-                </Camera>
+                </Preview>
             ) : (
                 <>
                     {data && (
