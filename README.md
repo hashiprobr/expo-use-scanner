@@ -1,6 +1,8 @@
 expo-use-scanner
 ================
 
+[PROJECT DISCONTINUED]
+
 **A React Hook for simplifying the barcode scanning features of
 [expo-camera](https://docs.expo.dev/versions/latest/sdk/camera/)**
 
